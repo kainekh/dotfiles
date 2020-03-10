@@ -1,0 +1,6 @@
+map <C-r> reload
+map R recolor
+
+set recolor 1
+set zoom-center 1
+set fullscreen

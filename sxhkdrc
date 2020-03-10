@@ -1,0 +1,68 @@
+super + control + Return
+	st
+
+super + Return
+	alacritty
+
+super + d
+	dmenu_run
+
+super + m
+	alacritty -e neomutt
+
+super + shift + m
+	~/.sh/vid
+
+super + n
+	st -e newsboat
+
+super + shift + n
+	XDG_CONFIG_HOME=~/.config/yt XDG_DATA_HOME=~/.config/yt st -e newsboat -u ~/.config/yt/yt -C ~/.config/yt/yt.config
+
+super + p
+		st -e podboat
+
+# super + b
+	#alacritty -e ~/.sh/quotebib
+
+super + b
+        brave
+
+super + q
+	qutebrowser
+
+super + shift + p
+		passmenu
+
+super + shift + y
+		~/.sh/pdf
+
+super + F4
+	alacritty -e synclient TouchpadOff=1
+
+super + shift + F4
+	alacritty -e synclient TouchpadOff=0
+
+super + F12
+	alacritty -e ~/.sh/triplemonitor.sh
+
+super + shift + F6
+	sudo -A systemctl restart NetworkManager
+
+super + F7
+	alacritty -e pulsemixer
+
+#slim-lock
+super + Escape
+     slimlock
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#screeenshooter
+ctrl + Print
+
+# reload sxhkd:
+# super + shift + s
+#	pkill -USR1 -x sxhkd
